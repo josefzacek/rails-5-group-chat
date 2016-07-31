@@ -34,9 +34,6 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
 gem 'devise', '~> 4.2'
 
-gem 'devise-bootstrapped', '~> 0.1.1'
-
-
 gem 'slim', '~> 3.0', '>= 3.0.7'
 
 group :development, :test do
