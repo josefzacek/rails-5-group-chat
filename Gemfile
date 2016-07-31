@@ -36,6 +36,9 @@ gem 'devise', '~> 4.2'
 
 gem 'devise-bootstrapped', '~> 0.1.1'
 
+
+gem 'slim', '~> 3.0', '>= 3.0.7'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
