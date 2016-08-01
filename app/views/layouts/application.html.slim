@@ -1,0 +1,28 @@
+doctype html
+html lang="en"
+  head
+
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+
+    title = content_for?(:title) ? yield(:title) : "Rails 5 Group Chat"
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = csrf_meta_tags
+
+  body
+
+    .container
+
+      p.notice #{notice}
+      p.alert #{alert}
+
+      = yield
+
+      hr
+
+      footer
+        .row
+          .col-md-12
+            p.text-right = link_to 'josefzacek.com', 'http://www.josefzacek.com', target: '_blank'
