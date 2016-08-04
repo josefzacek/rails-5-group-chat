@@ -22,3 +22,7 @@ gem 'slim', '~> 3.0', '>= 3.0.7'
 
 gem 'devise-bootstrapped', '~> 0.1.1' # only used to generate bootstrapped devise views then deleted as no longer needed
 ```
+
+### Releases
+
+[v1](https://github.com/josefzacek/Rails-5-Group-Chat/releases/tag/v1) sumarizes [Group Chat with ActionCable: Part 1](https://gorails.com/episodes/group-chat-with-actioncable-part-1)
