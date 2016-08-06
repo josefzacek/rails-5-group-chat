@@ -16,6 +16,9 @@ html lang="en"
     = render "layouts/header_navigation"
 
     .container-fluid
+
+      = render 'layouts/flash_messages'
+      
       .row
         .col-sm-2
           - if user_signed_in?
