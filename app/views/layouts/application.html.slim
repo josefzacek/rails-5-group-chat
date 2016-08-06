@@ -15,12 +15,16 @@ html lang="en"
 
     = render "layouts/header_navigation"
 
-    .container
+    p.notice #{notice}
+    p.alert #{alert}
 
-      p.notice #{notice}
-      p.alert #{alert}
-
-      = yield
+    .container-fluid
+      .row
+        .col-sm-2
+          - if user_signed_in?
+            h5 Chatrooms
+        .col-sm-10
+          = yield
 
       hr
 
