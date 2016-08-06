@@ -1,0 +1,7 @@
+- flash.each do |key, value|
+  div class="alert alert-#{key} fade in"
+    button type="button" class="close" data-dismiss="alert" aria-label="Close"
+      span aria-hidden="true" &times;
+    ul
+      li
+        = value
