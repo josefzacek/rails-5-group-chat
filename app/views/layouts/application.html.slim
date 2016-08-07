@@ -23,6 +23,9 @@ html lang="en"
         .col-sm-2
           - if user_signed_in?
             h5 Chatrooms
+            ul
+              - current_user.chatrooms.each do |chatroom|
+                li = link_to chatroom.name, '#'
         .col-sm-10
           = yield
 
