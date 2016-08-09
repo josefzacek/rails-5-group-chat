@@ -1,3 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'devise_flash_messages';
+
+.container-fluid.content-container {
+  padding-top: 70px;
+}
