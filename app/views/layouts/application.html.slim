@@ -20,15 +20,14 @@ html lang="en"
       = render 'layouts/flash_messages'
       
       .row
-        .col-sm-3
-          div data-spy="affix"
-            - if user_signed_in?
-              h5 Chatrooms
-              ul.nav.nav-pills.nav-stacked
-                - current_user.chatrooms.each do |chatroom|
-                  li = link_to chatroom.name, chatroom
+        .col-sm-3.sidebar-fixed-position
+          - if user_signed_in?
+            h5 Chatrooms
+            ul.nav.nav-pills.nav-stacked
+              - current_user.chatrooms.each do |chatroom|
+                li = link_to chatroom.name, chatroom
 
-        .col-sm-9
+        .col-sm-9.col-sm-offset-3
           = yield
 
       hr
