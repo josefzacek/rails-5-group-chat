@@ -20,12 +20,14 @@ html lang="en"
       = render 'layouts/flash_messages'
       
       .row
-          - if user_signed_in?
-            h5 Chatrooms
-            ul
-              - current_user.chatrooms.each do |chatroom|
-                li = link_to chatroom.name, '#'
         .col-sm-3
+          div data-spy="affix"
+            - if user_signed_in?
+              h5 Chatrooms
+              ul.nav.nav-pills.nav-stacked
+                - current_user.chatrooms.each do |chatroom|
+                  li = link_to chatroom.name, chatroom
+
         .col-sm-9
           = yield
 
