@@ -15,18 +15,19 @@ html lang="en"
 
     = render "layouts/header_navigation"
 
-    .container-fluid
+    .container-fluid.content-container
 
       = render 'layouts/flash_messages'
       
       .row
-        .col-sm-2
+        .col-sm-3.sidebar-fixed-position
           - if user_signed_in?
             h5 Chatrooms
-            ul
+            ul.nav.nav-pills.nav-stacked
               - current_user.chatrooms.each do |chatroom|
-                li = link_to chatroom.name, '#'
-        .col-sm-10
+                li = link_to chatroom.name, chatroom
+
+        .col-sm-9.col-sm-offset-3
           = yield
 
       hr

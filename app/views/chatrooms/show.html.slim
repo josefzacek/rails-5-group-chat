@@ -1,0 +1,14 @@
+p 
+  strong Chatroom name: 
+  = @chatroom.name
+
+
+div data-behavior='messages'
+  - @messages.each do |message|
+    div
+      strong = message.user.username
+      |: 
+      = message.body
+
+= form_for [@chatroom, Message.new] do |f|
+  = f.text_area :body, rows: 1, autofocus: true, class: 'form-control' 
