@@ -30,3 +30,6 @@ gem 'devise-bootstrapped', '~> 0.1.1' # only used to generate bootstrapped devis
 [v2.0](https://github.com/josefzacek/rails-5-group-chat/releases/tag/v2.0) sumarizes [Group Chat with ActionCable: Part 2](https://gorails.com/episodes/group-chat-with-actioncable-part-2)
 
 [v3.0](https://github.com/josefzacek/rails-5-group-chat/releases/tag/v3.0) sumarizes [Group Chat with ActionCable: Part 3](https://gorails.com/episodes/group-chat-with-actioncable-part-3)
+
+[v4.0](https://github.com/josefzacek/rails-5-group-chat/releases/tag/v4.0) sumarizes [Group Chat with ActionCable: Part 4](https://gorails.com/episodes/group-chat-with-actioncable-part-4)
+
