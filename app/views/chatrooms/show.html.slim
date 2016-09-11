@@ -3,7 +3,7 @@ p
   = @chatroom.name
 
 
-div data-behavior='messages'
+div data-behavior='messages' data-chatroom-id=@chatroom.id
   - @messages.each do |message|
     = render message
 
